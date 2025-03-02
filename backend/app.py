@@ -39,8 +39,16 @@ limiter = Limiter(get_remote_address, app=app, default_limits=["100 per minute"]
 @app.route('/<path:path>')
 def serve(path):
     """Serve the React app."""
-    if path != "" and os.path.exists(os.path.join(app.static_folder, path)):
+    logger.info(f"Static folder: {app.static_folder}")
+    logger.info(f"Requested path: {path}")
+    full_path = os.path.join(app.static_folder, path)
+    logger.info(f"Full path: {full_path}")
+    
+    if path != "" and os.path.exists(full_path):
+        logger.info(f"Serving file: {full_path}")
         return send_from_directory(app.static_folder, path)
+    
+    logger.info(f"Serving index.html from: {os.path.join(app.static_folder, 'index.html')}")
     return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/analyze', methods=['POST'])
