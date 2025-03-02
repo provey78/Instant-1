@@ -1,0 +1,22 @@
+/home/kali/Desktop/phishing_detector/.venv/lib/python3.13/site-packages/flask_limiter/extension.py:337: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+ * Debug mode: off
+2025-03-01 19:20:44,008 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-01 19:20:44,008 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-01 19:21:18,995 - INFO - 127.0.0.1 - - [01/Mar/2025 19:21:18] "GET / HTTP/1.1" 200 -
+2025-03-01 19:21:19,369 - INFO - 127.0.0.1 - - [01/Mar/2025 19:21:19] "GET /static/js/main.ddd27713.js HTTP/1.1" 200 -
+2025-03-01 19:21:19,380 - INFO - 127.0.0.1 - - [01/Mar/2025 19:21:19] "GET /static/css/main.be5f498c.css HTTP/1.1" 200 -
+2025-03-01 19:21:19,476 - INFO - 127.0.0.1 - - [01/Mar/2025 19:21:19] "GET /static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg HTTP/1.1" 200 -
+2025-03-01 19:21:19,487 - INFO - 127.0.0.1 - - [01/Mar/2025 19:21:19] "GET /logo192.png HTTP/1.1" 200 -
+2025-03-01 19:21:19,495 - INFO - 127.0.0.1 - - [01/Mar/2025 19:21:19] "GET /favicon.ico HTTP/1.1" 200 -
+2025-03-01 19:38:12,941 - INFO - 127.0.0.1 - - [01/Mar/2025 19:38:12] "GET / HTTP/1.1" 200 -
+2025-03-01 19:38:13,599 - INFO - 127.0.0.1 - - [01/Mar/2025 19:38:13] "GET /static/css/main.be5f498c.css HTTP/1.1" 200 -
+2025-03-01 19:38:13,601 - INFO - 127.0.0.1 - - [01/Mar/2025 19:38:13] "GET /static/js/main.ddd27713.js HTTP/1.1" 200 -
+2025-03-01 19:38:13,775 - INFO - 127.0.0.1 - - [01/Mar/2025 19:38:13] "GET /static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg HTTP/1.1" 200 -
+2025-03-01 19:40:45,273 - INFO - 127.0.0.1 - - [01/Mar/2025 19:40:45] "GET / HTTP/1.1" 200 -
+2025-03-01 19:40:45,447 - INFO - 127.0.0.1 - - [01/Mar/2025 19:40:45] "GET /static/js/main.ddd27713.js HTTP/1.1" 200 -
+2025-03-01 19:40:45,452 - INFO - 127.0.0.1 - - [01/Mar/2025 19:40:45] "GET /static/css/main.be5f498c.css HTTP/1.1" 200 -
+2025-03-01 19:40:45,551 - INFO - 127.0.0.1 - - [01/Mar/2025 19:40:45] "GET /static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg HTTP/1.1" 200 -
+2025-03-01 19:40:45,567 - INFO - 127.0.0.1 - - [01/Mar/2025 19:40:45] "GET /logo192.png HTTP/1.1" 200 -
+2025-03-01 19:42:27,590 - INFO - 127.0.0.1 - - [01/Mar/2025 19:42:27] "HEAD /analyze HTTP/1.1" 200 -
