@@ -11,11 +11,10 @@ logger = logging.getLogger(__name__)
 # Suspicious keywords for URL checks
 SUSPICIOUS_KEYWORDS = ['login', 'secure', 'account', 'update', 'bank', 'verify', 'signin', 'password']
 
-# Hardcoded API Keys (as requested)
-# WARNING: For production, use environment variables or a secure config file instead.
-ABUSEIPDB_API_KEY = '474d1ac4942db951d3e17b411652db34c566de66c709b2118c38735ca797fdc3c2086cc253052c28'
-IPINFO_API_KEY = '8497f12d11a03e'
-VIRUSTOTAL_API_KEY = '3561a4da8adb933ccc428ce84f314e191fde11147034b9e5a237856463da72b1'
+# API Keys loaded from environment variables
+ABUSEIPDB_API_KEY = os.getenv('PDBU_API_KEY')
+IPINFO_API_KEY = os.getenv('IPINFO_API_KEY')
+VIRUSTOTAL_API_KEY = os.getenv('VIRUSTOTAL_API_KEY')
 
 def is_valid_url(url):
     """Validate if the input is a proper URL."""
