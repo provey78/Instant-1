@@ -11,7 +11,7 @@ import os
 
 load_dotenv()
 
-app = Flask(__name__, static_folder="static", static_url_path="")
+app = Flask(__name__, static_folder="static/build", static_url_path="")
 CORS(app)
 
 # Configure logging
